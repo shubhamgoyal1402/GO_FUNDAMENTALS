@@ -3,7 +3,11 @@ package main
 import "fmt"
 
 func fizzbuzz() {
-	for i := 1; i <= 100; i++ {
+	for i := 1; ; i++ {
+
+		if i > 100 {
+			break
+		}
 
 		if i%3 == 0 && i%5 == 0 { // and logical opeartor
 			fmt.Println("FIZZBUZZ")

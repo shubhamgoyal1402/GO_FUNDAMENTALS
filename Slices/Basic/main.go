@@ -3,8 +3,19 @@ package main
 import "fmt"
 
 func main() {
+
+	// Declaring a slice without an array
+
+	mySlice := make([]int, 9) // make keyword make(type of slice , length of slice)
+
+	for i := 0; i < len(mySlice); i++ {
+		mySlice[i] = i
+
+	}
+
+	fmt.Println(mySlice)
 	arr := [8]int{1, 2, 3, 4, 5, 6, 7, 8}
-	// declaration of a slice
+	// declaration of a slice from an array
 	// from index arr[i:j] return from i to j-1
 	slice_arr := arr[2:7] //b={3,4,5,6,7}
 

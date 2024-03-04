@@ -5,7 +5,7 @@ import "fmt"
 func fizzbuzz() {
 	for i := 1; i <= 100; i++ {
 
-		if i%3 == 0 && i%5 == 0 {
+		if i%3 == 0 && i%5 == 0 { // and logical opeartor
 			fmt.Println("FIZZBUZZ")
 			continue
 		}
@@ -13,7 +13,7 @@ func fizzbuzz() {
 			fmt.Println("FIZZ")
 			continue
 		}
-		if i%5 == 0 {
+		if i%5 == 0 { //modulo operator
 			fmt.Println("BUZZ")
 			continue
 		}

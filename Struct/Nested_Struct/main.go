@@ -23,7 +23,7 @@ func main() {
 	}
 
 	car2 := car{}
-
+	// can access through car struct (material and radius)
 	car2.id = "MH-89S-4T93"
 	car2.name = "VERNA"
 	car2.tyre.material = "Polyster"

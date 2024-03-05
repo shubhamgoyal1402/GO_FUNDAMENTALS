@@ -9,15 +9,15 @@ type user struct {
 
 func main() {
 	detail := map[int]user{
-		1: user{
+		1: {
 			name: "shubham",
 			age:  12,
 		},
-		2: user{
+		2: {
 			name: "Tisha",
 			age:  18,
 		},
-		3: user{
+		3: {
 			name: "satvik",
 			age:  19,
 		},

@@ -21,9 +21,10 @@ func main() {
 			name: "satvik",
 			age:  19,
 		},
+		4: {"kiran", 52},
 	}
 
-	value, ok := detail[4] // prints empty name with age 0  with false
+	value, ok := detail[7] // prints empty name with age 0  with false
 
 	fmt.Println(value, ok)
 	value, ok = detail[3]

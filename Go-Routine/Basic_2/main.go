@@ -13,7 +13,7 @@ func main() {
 
 		go attack(name) // By go Routine all the ninjas are attacked within a second otherwise it would take  5sec
 	}
-	time.Sleep(time.Second)
+	time.Sleep(time.Second) // this will increase the time of the mission in next we will use channels for minimal time
 	fmt.Println(time.Since(start))
 
 }

@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	ninja1, ninja2 := make(chan string), make(chan string)
@@ -15,10 +17,12 @@ func main() {
 
 	case msg := <-ninja2:
 		fmt.Println(msg)
+
 	}
 
 }
 
 func attack(val chan string, msg string) {
+	// for making the default cSE RUN  USE 	time.Sleep(time.Second * 3)
 	val <- msg
 }

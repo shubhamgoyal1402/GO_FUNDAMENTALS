@@ -12,7 +12,7 @@ import "fmt"
 }*/
 
 func main() {
-
+	// Buffer channel
 	val := make(chan string, 1) // make(chan TYPE, LENGTH)
 
 	val <- "Shubham" // it will hold the value

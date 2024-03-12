@@ -12,6 +12,7 @@ func main() {
 	val := make(chan bool) // helps in not taking any more extra time that time.sleep takes for main fn not to exit
 	for _, names := range name {
 		go attack(names, val)
+		//val <- false channel cannot contains two value for now as it holds only one at a time
 		fmt.Println(<-val)
 	}
 
